@@ -55,10 +55,23 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<ul class="actions special">
-									<li><a href="Zeckria Kamrany - Resume.pdf" class="button large" target="_blank">Resume</a></li>
+									<li>
+										<span class="resume-arrow left" aria-hidden="true">&rarr;</span>
+										<a href="Zeckria Kamrany - Resume.pdf" class="button large" target="_blank">Click here to see my Resume</a>
+										<span class="resume-arrow right" aria-hidden="true">&larr;</span>
+									</li>
 								</ul>
-								<header class="major">
-									<p>Hello, my name is Zack! I am a student at UCLA studying Computer Science. I have a strong background in math and programming. I have experience in C++, Python and C. I have some experience with JavaScript and HTML/CSS as well. You can see some of the work I have done below. </p>
+								<header class="major">	 
+									<ul class="summary">
+										<li class="summary-lead"><strong> 👋 Hello, I'm Zack Kamrany! Here's some more information about me. </strong></li>
+										<li>Graduate student at UCLA studying Computer Science.</li>
+										<li>Experience in C++, Python, C, Java, JavaScript, React, and HTML/CSS.</li>
+										<li>Currently developing an AI assistant for a wet lab automation robot, which you can find <a href="https://zarlab-opentrons-hosting.web.app/" target="_blank">here</a>.</li>
+										<li>Interned at Amazon as a Software Development Engineer Intern.</li>
+										<li>Built a self-service reporting system for lost or stolen Amazon devices on the Manage Your Content and Devices page, which receives 5+ million visits per month.</li>
+										<li>Reduced customer service time and resources by cutting down on 350,000+ annual calls related to lost or stolen devices.</li>
+										<li>See some of my work below.</li>
+									</ul>
 								</header>
 								<!-- Removed href here -->
 								<!-- <a class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
@@ -69,13 +82,46 @@
 							<!-- <h1><a> <center>  </center><br /></a></h1> -->
 						<!-- Posts -->
 							<section class="posts">
-								<article>
+								<article class="video-card video-card--double">
+									<div class="video-grid">
+										<section class="video-item">
+											<h3>Reporting a Lost or Stolen Amazon Device</h3>
+											<div class="image fit">
+										<video controls preload="metadata" poster="images/ReportWorkflowMYCD-poster.jpg">
+											<source src="videos/ReportWorkflowMYCD.mp4" type="video/mp4" />
+											Sorry, your browser doesn't support embedded videos.
+										</video>
+									</div>
+									<ul class="summary">
+										<li>Built Amazon's self-service reporting system for lost or stolen devices.</li>
+										<li>Enables customers to report lost or stolen Amazon devices without contacting customer service.</li>
+									</ul>
+								</section>
+								<section class="video-item">
+									<h3>Marking a Lost or Stolen Amazon Device as Found</h3>
+									<div class="image fit">
+										<video controls preload="metadata" poster="images/MYCDDeviceFound-poster.jpg">
+											<source src="videos/MYCDDeviceFound.mp4" type="video/mp4" />
+											Sorry, your browser doesn't support embedded videos.
+										</video>
+									</div>
+									<ul class="summary">
+										<li>Built the system for marking a lost or stolen Amazon device as found.</li>
+										<li>Allows customers to mark a device as found without contacting customer service.</li>
+									</ul>
+								</section>
+							</div>
+						</article>
+						<article>
 									<header>
 										<!--<span class="date">April 24, 2017</span>-->
 										<h2><a href="#">TunnelMan<br /> </a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/TunnelManGif.gif" alt="" /></a>
-									<p>A level-based game with power-ups, enemies, and points; it was created with over 2,400 lines of C++ code. Protesters chase after the tunnelman in real-time with an optimal path-finding algorithm as he collects gold and oil.</p>
+									<ul class="summary">
+										<li>Level-based game with power-ups, enemies, and points, built with over 2,400 lines of C++ code.</li>
+										<li>Protesters chase the TunnelMan in real time using an optimal path-finding algorithm while he collects gold and oil.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -87,9 +133,10 @@
 												</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/HTTPServerDemo.gif" alt="" /></a>
-									<p> Utilized socket programming to handle client TCP connections and serve HTTP requests, 
-										parsing incoming requests to extract file paths and serve requested files. Managed socket and 
-										file descriptor lifecycles, ensuring proper closure to avoid resource leaks.</p>
+									<ul class="summary">
+										<li>Used socket programming to handle client TCP connections and serve HTTP requests by parsing file paths and returning requested files.</li>
+										<li>Managed socket and file descriptor lifecycles to ensure proper closure and avoid resource leaks.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -101,12 +148,11 @@
 											</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/genomeAssemblerGif.gif" alt="" /></a>
-									<p>
-										The genome assembly process (coded in Python) using De Bruijn graphs involves breaking DNA reads into k-mers, 
-										constructing a graph where nodes represent (k-1)-mers and edges represent k-mers, 
-										finding an Eulerian path through the graph, and reconstructing the genome by traversing this path and 
-										combining the nodes to form the original sequence.
-									</p>
+									<ul class="summary">
+										<li>Implemented the genome assembly process in Python using De Bruijn graphs.</li>
+										<li>Broke DNA reads into k-mers and constructed a graph with (k-1)-mer nodes and k-mer edges.</li>
+										<li>Found an Eulerian path through the graph and reconstructed the genome by traversing it and combining nodes into the original sequence.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -118,7 +164,10 @@
 												</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/ShufGif.gif" alt="" /></a>
-									<p>Implemented the bash command shuf in python using argparse so that it can be used from the command-line.</p>
+									<ul class="summary">
+										<li>Implemented the bash command shuf in Python.</li>
+										<li>Used argparse to make it available from the command line.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -129,7 +178,10 @@
 										<h2><a href="#">Robot Take-Over<br /> </a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/robotTakeGif.gif" alt="" /></a>
-									<p>A turn-based game (also coded in C++) where you are surrounded by robots. You can move up, down, left, and right in order to shoot down all of the robots! </p>
+									<ul class="summary">
+										<li>Turn-based C++ game where you are surrounded by robots.</li>
+										<li>Move up, down, left, and right to shoot down all the robots.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -140,7 +192,10 @@
 										<h2><a href="#">Randall</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/randallGif.gif" alt="" /></a>
-									<p>Refactored a program and used a makefile to implement randall, a C program, that can be called from the command-line, that generates random bytes of data.</p>
+									<ul class="summary">
+										<li>Refactored the program and used a Makefile to implement randall as a C command-line tool.</li>
+										<li>Randall generates random bytes of data.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -152,7 +207,9 @@
 												</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/UPE Logo.jpg" alt="" /></a>
-									<p>I have earned membership to Upsilon Pi Epsilon: International Honor Society for the Computing and Information Disciplines.</p>
+									<ul class="summary">
+										<li>Earned membership in Upsilon Pi Epsilon, the international honor society for the Computing and Information Disciplines.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -164,7 +221,9 @@
 												</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/TBP Logo.png" alt="" /></a>
-									<p>I have earned membership into Tau Beta Pi, the oldest engineering honor society in the United States.</p>
+									<ul class="summary">
+										<li>Earned membership in Tau Beta Pi, the oldest engineering honor society in the United States.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>

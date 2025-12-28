@@ -2628,9 +2628,16 @@ input, select, textarea {
 				margin-top: 0;
 			}
 
-			.image.fit img {
-				width: 100%;
-			}
+		.image.fit img {
+			width: 100%;
+		}
+
+		.image.fit video {
+			display: block;
+			height: auto;
+			max-width: 100%;
+			width: 100%;
+		}
 
 		.image.main {
 			display: block;
@@ -3794,6 +3801,53 @@ input, select, textarea {
 
 			#main > .post.featured {
 				text-align: center;
+				padding-top: 4rem;
+				padding-bottom: 0.9rem;
+			}
+
+			#main > .post.featured header.major {
+				margin-bottom: 0.5rem;
+			}
+
+			#main > .post.featured header.major > p {
+				font-size: 0.95rem;
+			}
+
+			#main > .post.featured ul.actions {
+				margin-bottom: 2.5rem;
+			}
+
+			#main > .post.featured .resume-arrow {
+				color: #717981;
+				display: inline-block;
+				font-size: 1.1rem;
+				margin: 0 0.75rem;
+				vertical-align: middle;
+			}
+
+			#main > .post.featured ul.summary {
+				display: inline-block;
+				font-size: 0.95rem;
+				line-height: 1.85;
+				margin: 0 auto;
+				max-width: 48rem;
+				padding-left: 1.25rem;
+				text-align: left;
+			}
+
+			#main > .post.featured ul.summary li {
+				margin-bottom: 0.5rem;
+				padding-left: 0;
+			}
+
+			#main > .post.featured ul.summary li.summary-lead {
+				list-style: none;
+				margin-left: -1.25rem;
+				margin-bottom: 1.25rem;
+			}
+
+			#main > .post.featured ul.summary li:last-child {
+				margin-bottom: 0;
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -3802,12 +3856,24 @@ input, select, textarea {
 					padding: 6rem 4rem 4rem 4rem ;
 				}
 
+				#main > .post.featured {
+					padding-top: 3.5rem;
+				}
+
 			}
 
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
+				}
+
+				#main > .post.featured {
+					padding-top: 3rem;
+				}
+
+				#main > .post.featured {
+					padding-bottom: 0.75rem;
 				}
 
 					#main > .post header.major > .date {
@@ -3928,6 +3994,124 @@ input, select, textarea {
 				}
 
 			}
+
+		#main > .posts > article.video-card {
+			border-left-width: 0;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 50rem;
+			padding: 1.5rem;
+			width: 100%;
+		}
+
+		#main > .posts > article.video-card .video-grid {
+			display: grid;
+			gap: 2.5rem;
+		}
+
+		#main > .posts > article.video-card .video-item + .video-item {
+			border-top: solid 1px #e2e2e2;
+			padding-top: 2.5rem;
+		}
+
+		#main > .posts > article.video-card .video-item h3 {
+			font-size: 1.05rem;
+			font-weight: 700;
+			letter-spacing: 0.03em;
+			line-height: 1.4;
+			margin: 0 0 0.75rem 0;
+			text-transform: none;
+		}
+
+		#main > .posts > article ul.summary {
+			margin: 0 0 1.25rem 0;
+			padding-left: 1.25rem;
+			text-align: left;
+		}
+
+		#main > .posts > article ul.summary li {
+			line-height: 1.85;
+			margin-bottom: 0.5rem;
+			padding-left: 0;
+		}
+
+		#main > .posts > article ul.summary li:last-child {
+			margin-bottom: 0;
+		}
+
+		#main > .posts > article.video-card .video-item ul.summary {
+			margin-bottom: 0;
+		}
+
+		@media screen and (min-width: 737px) {
+
+			#main > .posts > article.video-card--double + article {
+				border-top-width: 2px;
+			}
+
+			#main > .posts > article.video-card--double ~ article:nth-child(odd) {
+				border-left-width: 2px;
+			}
+
+			#main > .posts > article.video-card--double ~ article:nth-child(even) {
+				border-left-width: 0;
+			}
+
+		}
+
+		#main > .posts > article:not(.video-card) {
+			padding: 2.25rem;
+		}
+
+		#main > .posts > article.video-card + article.video-card {
+			border-top-width: 2px;
+		}
+
+		#main > .posts > article.video-card .image {
+			max-width: none;
+		}
+
+		#main > .posts > article.video-card .image.fit {
+			margin-left: -1.5rem;
+			margin-right: -1.5rem;
+			width: calc(100% + 3rem);
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main > .posts > article.video-card {
+				padding: 1.25rem;
+			}
+
+			#main > .posts > article:not(.video-card) {
+				padding: 1.75rem;
+			}
+
+			#main > .posts > article.video-card .image.fit {
+				margin-left: -1.25rem;
+				margin-right: -1.25rem;
+				width: calc(100% + 2.5rem);
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main > .posts > article.video-card {
+				padding: 2rem;
+			}
+
+			#main > .posts > article:not(.video-card) {
+				padding: 1.25rem;
+			}
+
+			#main > .posts > article.video-card .image.fit {
+				margin-left: -2rem;
+				margin-right: -2rem;
+				width: calc(100% + 4rem);
+			}
+
+		}
 
 		@media screen and (max-width: 736px) {
 
