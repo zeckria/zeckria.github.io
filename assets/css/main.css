@@ -3817,12 +3817,45 @@ input, select, textarea {
 				margin-bottom: 2.5rem;
 			}
 
-			#main > .post.featured .resume-arrow {
+			#main > .post.featured .resume-button {
+				position: relative;
+			}
+
+			#main > .post.featured .resume-button::before,
+			#main > .post.featured .resume-button::after {
 				color: #717981;
-				display: inline-block;
 				font-size: 1.1rem;
-				margin: 0 0.75rem;
-				vertical-align: middle;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			#main > .post.featured .resume-button::before {
+				content: "\2192";
+				right: 100%;
+				margin-right: 0.75rem;
+			}
+
+			#main > .post.featured .resume-button::after {
+				content: "\2190";
+				left: 100%;
+				margin-left: 0.75rem;
+			}
+
+			@media screen and (max-width: 480px) {
+
+				#main > .post.featured .resume-button::before {
+					left: 0.75rem;
+					margin-right: 0;
+					right: auto;
+				}
+
+				#main > .post.featured .resume-button::after {
+					left: auto;
+					margin-left: 0;
+					right: 0.75rem;
+				}
+
 			}
 
 			#main > .post.featured ul.summary {
