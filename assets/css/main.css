@@ -3752,6 +3752,21 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+			#nav ul.icons li {
+				padding: 0 0.75rem 0 0;
+			}
+
+			#nav ul.icons li:last-child {
+				padding-right: 0;
+			}
+
+			#nav ul.icons li .icon:before {
+				width: 4.25rem;
+				height: 4.25rem;
+				line-height: 4.25rem;
+				font-size: 2.5rem;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			#nav {
